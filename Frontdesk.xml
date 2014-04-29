@@ -19,20 +19,27 @@
                 <field name="model">ascs.frontdesk</field>
                 <field name="type">form</field>
                 <field name="arch" type="xml">
-                    <form string="form">
-                                      
+                    <form string="form" version="7.0">                                 
+                       <sheet>
                           <group>
-                          <field name="name" select="1"/>  
-                          <field colspan="2" name="in"/>
-                             <field colspan="2" name="nam_id"/>
-                                <field colspan="2" name="Prod_id"/>
-                        		<field colspan="2" name="rtyp"/>
-                        		<field colspan="2" name="Number_id"/> 
-                        		 <field colspan="2" name="out"/>                        		
-                            </group>
-                            <group>
-                                <field name="cat"/>                        		                        		
-                            </group>                                                  
+                              <group>                          
+                                   <field name="name" select="1"/>  
+                                   <field colspan="2" name="in"/>
+                                   <field colspan="2" name="nam_id"/>
+                                   <field colspan="2" name="Prod_id"/>
+                        		   <field colspan="2" name="rtyp"/>
+                        		   <field colspan="2" name="Number_id"/>                         		                      
+                             </group>                     		                         		
+                             <group>                            
+                                   <field name="cat"/>                   		                        		
+                             </group>
+                           </group>  
+                           <notebook>                           
+                           		<page string="Person Details">
+                         				<field name="ascs_persons"/>                     
+                     			</page>                
+                            </notebook>
+                          </sheet>                                                                                                                                                                  
                     </form>
                 </field>
             </record>
@@ -46,8 +53,10 @@
                 <field name="view_mode">tree,form</field>
                 <field name="view_id" ref="font_tree_view"/>
             </record>
-
-		
-    
+            
+            
     </data>
 </openerp>
+
+            
+           

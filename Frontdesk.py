@@ -13,8 +13,8 @@ class ASCS_Frontdesk(osv.osv):
             'rtyp': fields.selection([('senior', 'Senior'),('junior','Junior'),('labour','Labour'),('vip','VIP')],'Category'),
             'Number_id':fields.many2one('ascs.no','Room No.',required=False,ondelete='set null'),
             'cat':fields.text('Facilities', size=64, required=False, readonly=False),
-            'in':fields.date('Check In Date', size=64, required=False, readonly=False),
-            'out':fields.date('Check Out Date', size=64, required=False, readonly=False)
+            'in':fields.date('Check In Date', size=64, required=False, readonly=False),            
+            'ascs_persons':fields.one2many('ascs.person','cat_id','Person Details')
             
             
         }

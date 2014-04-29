@@ -12,6 +12,7 @@ class ASCS_room(osv.osv):
             'rtyp': fields.selection([('senior', 'Senior'),('junior','Junior'),('labour','Labour'),('vip','VIP')],'Room Type'),
             'name':fields.char('capaciy', size=64, required=False, readonly=False),
             'pno':fields.char('Phone No', size=64, required=False, readonly=False),
-            'add':fields.text('Additional Details', size=64, required=False, readonly=False)
+            'add':fields.text('Additional Details', size=64, required=False, readonly=False),
+        
         }
 ASCS_room()

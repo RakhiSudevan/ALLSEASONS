@@ -19,7 +19,7 @@
                 <field name="model">ascs.block</field>
                 <field name="type">form</field>
                 <field name="arch" type="xml">
-                    <form string="block">
+                    <form string="block" >
                         <field name="name" select="1"/>
                     </form>
                 </field>
@@ -34,7 +34,7 @@
                 <field name="view_mode">tree,form</field>
                 <field name="view_id" ref="block_tree_view"/>
             </record>
-
-		    
+            
+                 
     </data>
 </openerp>

@@ -19,7 +19,7 @@
                 <field name="model">ascs.no</field>
                 <field name="type">form</field>
                 <field name="arch" type="xml">
-                    <form string="number">
+                    <form string="number" version="7.0">
                         <field name="name" select="1"/>
                     </form>
                 </field>

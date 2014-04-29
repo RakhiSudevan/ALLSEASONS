@@ -31,7 +31,7 @@
                    				 	<field colspan="2" name="name" />
                    				 	<field colspan="2" name="pno" />
                    				 	<field colspan="2" name="add" />
-                   				 	                  				 
+                   				 	                  				 	                  				 
                    				 	
                          	 </group>  
                     </form>
@@ -48,6 +48,6 @@
                 <field name="view_id" ref="room_tree_view"/>
             </record>
 
-			   
+		    
     </data>
 </openerp>
